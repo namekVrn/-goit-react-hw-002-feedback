@@ -1,7 +1,9 @@
+import css from '../components/container.module.css'
+import react,{Component} from "react";
 import ButtonEvolution from "./ButtonEvolution";
 import Statistic from './Statistic'
-import react, {Component} from "react";
-import css from '../components/container.module.css'
+console.log(react);
+
 class App extends Component {
   state = {
     good: 0,
@@ -26,21 +28,17 @@ goodAction = () => {
         return {good: this.state.good + 1}
     })
 }
-
 neutralAction = () => {
   this.setState((preState)=>{
       return {neutral: this.state.neutral + 1}
   })
 }
 
-
-
 badAction = () => {
   this.setState((preState)=>{
       return {bad: this.state.bad + 1}
   })
 }
-
 
  render(){
    return(

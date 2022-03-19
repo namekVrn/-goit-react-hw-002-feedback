@@ -1,5 +1,6 @@
 import react, {Component} from "react";
 import "../Statistic/Statistic.css"
+console.log(react)
 
 class Statistic extends Component {
    
