@@ -24,32 +24,28 @@ class Statistic extends Component {
             <>
             <div className="feedback__statistic">
                 <h3 className="feedback__title">Statistic</h3>
-               
                 <table className="table">
-                   
-                        <tr className="header_row">
-                            <th className="header_item">Good</th>
-                            <th className="header_item">Neutral</th>
-                            <th className="header_item">Bad</th>
-                            <th className="header_item">Total</th>
-                            <th className="header_item">TotalPercent</th>
-                        </tr>
-                   
-                    
-                        <tr className="table_rows">
-                            <td className="items">{good}</td>
-                            <td className="items">{neutral}</td>
-                            <td className="items">{bad}</td>
-                            <td className="items">{totalFeedback}</td>
-                            <td className="items">{totalPercent+"%"}</td>
-                        </tr>
-                   
-                    
+                        <thead>
+                          <tr className="header_row">
+                              <th className="header_item">Good</th>
+                              <th className="header_item">Neutral</th>
+                              <th className="header_item">Bad</th>
+                              <th className="header_item">Total</th>
+                              <th className="header_item">TotalPercent</th>
+                          </tr>
+                        </thead>
+                       <tbody>
+                          <tr className="table_rows">
+                              <td className="items">{good}</td>
+                              <td className="items">{neutral}</td>
+                              <td className="items">{bad}</td>
+                              <td className="items">{totalFeedback}</td>
+                              <td className="items">{totalPercent+"%"}</td>
+                          </tr>
+                      </tbody>
                 </table>
-                
             </div>
             </>
-
         )
     }
 }

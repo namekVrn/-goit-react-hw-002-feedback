@@ -1,4 +1,5 @@
 import react, {Component} from "react";
+// console.log(react)
 import css from '../ButtonEvolution/ButtonEvolution.css'
 class ButtonEvolution extends Component {
    
