@@ -1,0 +1,6 @@
+.containerCenter {
+    width: 768px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px dotted rgb(3, 199, 150);
+}
